@@ -1,0 +1,472 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    /* background-color: #E0FFFF; */
+    min-height: 100vh;
+}
+
+
+
+/* 1st Page - Pro Education */
+.hero-card h1{
+    display: flex;
+    place-content: center;
+    font-size: 3rem;
+}
+
+.hero-card-content {
+  
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-card-text {
+  flex: 1;
+  text-indent: 2rem;
+  color: #333;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.hero-card-text p {
+  margin-bottom: 0.5rem;
+}
+
+.hero-card-content img {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  align-self: center; 
+}
+
+
+/* 2nd Page - Related Courses */
+.card-1 {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card-1 h1 {
+  font-size: 3rem;
+  display: flex;
+  place-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-1-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 220px;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+}
+.course-card h3{
+    margin-bottom: 0.5rem;
+}
+.course-card p{
+    margin-bottom: 0.5rem;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.course-card h4 a{
+    font-weight: lighter;
+}
+
+/* 3rd Page - Help Documents */
+.card-2{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.card-2 h1{
+  font-size: 3rem;
+  display: flex;
+  place-content: center;
+  margin-bottom: 1.5rem;
+}
+.card-2-content h2{
+  padding: 1rem;
+}
+.help-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.icon-card {
+  margin-top: 2rem;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.titles-row,
+.links-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.titles-row h4,
+.links-row a {
+  flex: 1;
+  text-align: center;
+}
+
+
+/* 4th Page - Faculty Resources */
+.card-3 h1{
+  font-size: 3rem;
+  display: flex;
+  place-content: center;
+  margin-bottom: 1.5rem;
+}
+.card-3 {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-3-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.card-3-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-3-left img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 6rem;
+  object-fit: cover;
+}
+
+.card-3-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-3-right h2 {
+  text-align: left;
+  margin-top: 0;
+}
+
+.text-link {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.create-btn {
+  background-color: #63aeff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.create-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* 5th Page - Student Resources */
+.card-4 h1{
+  font-size: 3rem;
+  display: flex;
+  place-content: center;
+  margin-bottom: 1.5rem;
+}
+.card-4 {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-4-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.card-4-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-4-left img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 6rem;
+  object-fit: cover;
+}
+
+.card-4-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-4-right h2 {
+  text-align: right;
+  margin-top: 0;
+}
+
+.text-link {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.create-btn {
+  background-color: #63aeff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.create-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Last Page - Case Studies */
+.card-5 h1{
+  font-size: 3rem;
+  display: flex;
+  place-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-5-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.course-card5 {
+  flex: 0 1 calc(28% - 0.75rem); 
+  background: #f8f8f8;
+  padding: 0.75rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  place-content: center;
+}
+
+.card5-icon {
+  margin-bottom: 0.5rem;
+}
+
+.course-card5 h4 {
+  font-size: 1rem;
+  margin: 0.3rem 0 0.6rem;
+  text-align: center;
+}
+
+.course-card5 p {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+
+/* Unaffected Ones */
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.dots div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #0077b6; /* or use a soft blue like #add8e6 */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dots div.active {
+  background-color: #20B2AA;
+  transform: scale(1.4);
+}
+
+.dots div:hover {
+  transform: scale(1.3);
+  background-color: #00bcd4;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.buttons svg {
+  width: 50px;
+  height: 50px;
+  color: black;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 50, 0.1);
+}
+
+.buttons svg:hover {
+  transform: scale(1.15);
+  color: #20B2AA;
+}
+.buttons svg:active {
+  transform: scale(0.95);
+  color: #0077b6;
+}
+
+
+/* RESPONSIVE CSS ONLY */
+@media (max-width: 768px) {
+    /* Make hero content stack vertically */
+    .hero-card-content,
+    .card-3-content,
+    .card-4-content,
+    .help-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust headings for smaller screens */
+    .hero-card h1,
+    .card-1 h1,
+    .card-2 h1,
+    .card-3 h1,
+    .card-4 h1,
+    .card-5 h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* Stack course cards vertically */
+    .card-row,
+    .titles-row,
+    .links-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Resize and stack the course cards */
+    .course-card {
+        min-width: 80%;
+    }
+
+    /* Resize help document icons */
+    .icon-card {
+        width: 100px;
+    }
+
+    /* Adjust case study cards for mobile */
+    .course-card5 {
+        flex: 0 1 90%;
+    }
+
+    /* Move navigation arrows to center */
+    .buttons {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    /* Adjust arrow button size on small screens */
+    .buttons svg {
+        width: 40px;
+        height: 40px;
+    }
+}

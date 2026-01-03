@@ -1,0 +1,111 @@
+.mainprod h1{
+    font-size: 3rem;
+    display: flex;
+    place-content: center;
+    margin-bottom: 1.5rem;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.pro{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+}
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto; 
+  max-height: 180px; 
+  object-fit: contain; 
+  border-radius: 15px;
+}
+
+.but3{
+    height: 60px;
+    width: 150px;
+    font-size: 21px;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgba(25, 25, 112, 0.9);
+    color: #fff;
+}
+button:hover{
+    background: rgba(25, 25, 112,80%);
+    color: #fff;
+}
+.text{
+    text-align: center;
+    /* font-size: 25px; */
+    color: #333;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+.fstsub {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.fstsub button {
+  height: 100px;
+  width: 140px;
+  border-radius: 20px;
+  font-size: 18px;
+  text-align: center;
+  background: rgba(25, 25, 112, 90%);
+  color: #fff;
+  border: none;
+  transition: background 0.3s;
+}
+
+.nsi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+}
+
+.clear {
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  width: 130px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.clear:hover {
+  background-color: #ccc;
+}

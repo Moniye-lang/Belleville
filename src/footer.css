@@ -1,0 +1,133 @@
+body{
+    height: 100vh;
+    overflow-x: hidden;
+}
+.footer-container {
+    padding-bottom: 50px;
+}
+.firstsec{
+    background: rgba(25, 25, 112, 0.9);
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+.h{
+    height: 50px;
+    width: 150px;
+    border-radius: 0 16px 16px 0;
+    font-size: 18px;
+    border: none;
+    margin-left: 4px;
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0.8);
+    transition: background 0.3s;
+}
+.subfirst{
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+.subfirst input {
+    height: 50px;
+    width: 300px;
+    font-size: 18px;
+    border-radius: 16px 0 0 16px;
+    border: none;
+    padding-left: 10px;
+}
+
+.post-text{
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ccc;
+    line-height: 1.5;
+}
+.footer-logo{
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     font-size: 32px;
+     font-weight: 700;
+     color: #333;
+     background: #fff;
+     padding: 10px 20px;
+     border-radius: 50px;
+    }
+.foot-logo{
+    height: 50px;
+    width: 50px;
+}
+
+.logo-cont{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    margin-top: 30px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: rgba(25, 25, 112, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.icon:hover {
+    background-color: rgba(25, 25, 112, 0.9);
+    color: #fff;
+    transform: scale(1.1);
+}
+hr{
+    width: 80%;
+    height: 3px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(25, 25, 112, 0.9);
+    margin: 50px auto 0 auto;
+}
+.childloc{
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+}   
+.loc{
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(25, 25, 112, 0.9);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.cr{
+    margin: 30px auto 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-200%); /* Start from the left edge */
+    }
+    100% {
+        transform: translateX(100vw);  /* Move to the right edge */
+    }
+}

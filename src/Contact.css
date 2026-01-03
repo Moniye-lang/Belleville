@@ -1,0 +1,366 @@
+.contact-section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section2-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section2-header h1 {
+  font-size: 2.5rem;
+  color: #444;
+  margin-bottom: 8px;
+  padding-top: 15px;
+}
+
+.section2-header p {
+  color: #444;
+  font-size: 1.1rem;
+}
+
+
+.contact-content {
+  background: #fff;
+  border-radius: 18px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+
+.contact-content h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+
+.contact-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+
+.contact-items {
+  background: #f6f8fa;
+  border-radius: 20px;
+  box-shadow: none;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  border: 2px solid transparent;
+  transition: all 0.3s, ease;
+}
+
+.contact-items:hover {
+  border: 2px solid #4f6ef7;
+  transform: translateY(-5px);
+}
+
+
+.contact-icon {
+  font-size: 2.5rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-text h4 {
+  margin: 0 0 6px 0;
+  color: #222;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.contact-text p {
+  margin: 0;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+.appointment-form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 32px 32px 32px;
+}
+
+.appointment-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.appointment-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+ 
+}
+
+.appointment-form .form-row {
+  display: contents;
+  transition: all 0.3s ease;
+}
+
+.appointment-form .form-row:hover{
+    border: 3px solid #4f6ef7;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  font-size: 1.1rem;
+  padding: 0.9rem 1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  color: #222;
+  transition: border 0.2s;
+  outline: none;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 2px #e0e7ff;
+}
+
+.appointment-form textarea {
+  grid-column: 1 / span 2;
+  resize: vertical;
+  min-height: 90px;
+}
+
+.appointment-form .submit-btn {
+  grid-column: 1 / span 2;
+  padding: 1rem 0;
+  background: linear-gradient(90deg, #6c63ff 0%, #8360c3 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.appointment-form .submit-btn:hover {
+  background: linear-gradient(90deg, #5a54d1 0%, #6c63ff 100%);
+}
+
+.map-section {
+  background: #fff;
+  border-radius: 18px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+.map-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.map-placeholder {
+  background: linear-gradient(90deg, #6c63ff 0%, #8360c3 100%);
+  border-radius: 16px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-content {
+  color: #fff;
+  text-align: center;
+}
+
+.map-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.directions-btn {
+  margin-top: 18px;
+  background: #fff;
+  color: #6c63ff;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 28px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: #fff 0.2s,;
+}
+
+.directions-btn:hover {
+  background: #ecebff;
+  color: #8360c3;
+}
+
+
+.emergency-contact {
+  background: #e53935;
+  color: #fff;
+  border-radius: 16px;
+  margin: 40px auto;
+  padding: 40px 0;
+  max-width: 1100px;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+.emergency-contact h2 {
+  color: #fff;
+  margin-bottom: 18px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.emergency-info {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.emergency-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emergency-text h4 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.emergency-text p {
+  color: #fff;
+  margin: 0;
+}
+
+.emergency-number {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 8px;
+}
+
+
+@media (max-width: 900px) {
+  .contact-content,
+  .map-section,
+  .emergency-contact {
+    padding: 20px 4px;
+    max-width: 100%;
+  }
+  .contact-details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .contact-items {
+    padding: 1.2rem 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .appointment-form {
+    padding: 20px 8px;
+  }
+  .appointment-form form {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .appointment-form textarea,
+  .appointment-form .submit-btn {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form textarea {
+    font-size: 1rem;
+    padding: 0.8rem 0.8rem;
+  }
+  .appointment-form .submit-btn {
+    font-size: 1rem;
+    padding: 0.8rem 0;
+  }
+}
+@media (max-width: 400px) {
+  .contact-content h2 {
+    font-size: 1.8rem;
+  }
+  .contact-items {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-icon {
+    margin-bottom: 10px;
+  }
+  .appointment-form h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .contact-content h2 {
+    font-size: 1.6rem;
+  }
+  .contact-items h4 {
+    font-size: 1rem;
+  }
+  .contact-items p {
+    font-size: 0.9rem;
+  }
+  .appointment-form h2 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 320px) {
+  .contact-content h2 {
+    font-size: 1.4rem;
+  }
+  .contact-items h4 {
+    font-size: 0.9rem;
+  }
+  .contact-items p {
+    font-size: 0.8rem;
+  }
+  .appointment-form h2 {
+    font-size: 1.4rem;
+  }
+}

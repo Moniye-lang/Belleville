@@ -1,0 +1,267 @@
+/* Reset and Base Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Container */
+.ovr-container {
+    background-color: aliceblue;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo and Visit Counter */
+.user-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-counter {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 1.7rem;
+    /* font-weight: bold; */
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: grid;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.nav-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.nav-label a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.nav-label a:hover {
+    color: #007bff;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: #333;
+}
+
+.icon-btn:hover {
+    color: #007bff;
+    transform: scale(1.35);
+}
+
+/* Dropdown Menu */
+.dropdown {
+    background-color: white;
+    position: absolute;
+    cursor: pointer;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 8px 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown li {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.dropdown li:hover {
+    background-color: lightgray;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.dropdown li a:hover {
+    color: #007bff;
+}
+
+/* Learn More Button */
+.call-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.call-btn {
+    background-color: #63aeff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.call-btn:hover {
+    background-color: #3e8bde;
+    transform: scale(1.03);
+}
+
+.call-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+.call-btn-txt {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Responsive Sidebar for Mobile */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem 1rem;
+        transition: right 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .nav-links.nav-active {
+        right: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .nav-label {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .call-now {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
+/* Exit button container */
+.exit-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+/* Exit button design */
+.exit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #333;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.exit-btn:hover {
+    color: #007bff;
+    transform: scale(1.3);
+}
+/* Exit button container - always hidden by default */
+.exit-btn-container {
+    display: none; /* Hide by default */
+}
+
+/* Show only on mobile view */
+@media (max-width: 768px) {
+    .exit-btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,146 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section Container */
+.main {
+    min-height: 100vh; /* Allow the section to expand if needed */
+    width: 100%;
+}
+
+/* Hero Content Wrapper */
+.sub {
+    min-height: 100vh; /* Ensure full viewport height but allow to grow */
+    background-color: rgba(25, 25, 112, 0.9); /* Dark navy with opacity */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    gap: 40px; /* Space between text and image */
+    flex-wrap: wrap; /* Allow items to stack on smaller screens */
+    padding: 40px 20px; /* Responsive padding */
+}
+
+/* Image Styling */
+.image img {
+    width: 500px;
+    height: auto;
+    max-width: 90%; /* Image scales within smaller screens */
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensure image stays proportional */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Optional Image Hover Animation */
+.image img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Text Block Styling */
+.text1 {
+    color: #fff;
+    max-width: 600px; /* Limit text width for readability */
+    text-align: left; /* Left-aligned text */
+    padding: 0 20px;
+}
+
+/* Small Header Text */
+.headt {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/* Main Header Text */
+.maint {
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    line-height: 1.2; /* Better line spacing */
+}
+
+.maint span {
+    color: rgba(0, 255, 255, 0.7); /* Highlighted text */
+}
+
+/* Description Text */
+.foot {
+    font-size: 18px;
+    padding-bottom: 30px;
+    line-height: 1.5; /* Better paragraph readability */
+}
+
+/* Button Container */
+.button-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap if needed */
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: flex-start; /* Align buttons to the left by default */
+}
+
+/* Button Styling */
+.but {
+    font-size: 18px;
+    height: 50px;
+    width: 180px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    background-color: rgba(0, 255, 255, 0.8);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.but:hover {
+    background-color: rgba(0, 255, 255, 1); /* Brighter on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments for Tablets */
+@media (max-width: 768px) {
+    .sub {
+        gap: 20px; /* Smaller gap between items */
+    }
+
+    .maint {
+        font-size: 40px; /* Slightly smaller header text */
+    }
+
+    .but {
+        width: 160px; /* Slightly smaller buttons */
+        font-size: 16px;
+    }
+}
+
+/* Responsive Adjustments for Phones */
+@media (max-width: 576px) {
+    .sub {
+        flex-direction: column; /* Stack image and text */
+        text-align: center; /* Center text on small screens */
+    }
+
+    .text1 {
+        text-align: center; /* Center text block */
+        padding: 0;
+    }
+
+    .button-group {
+        justify-content: center; /* Center buttons on mobile */
+    }
+
+    .but {
+        width: 140px; /* Smaller buttons for mobile */
+        font-size: 15px;
+        height: 45px;
+    }
+
+    .maint {
+        font-size: 32px; /* More comfortable mobile size */
+    }
+
+    .foot {
+        font-size: 16px; /* Smaller paragraph text */
+    }
+}

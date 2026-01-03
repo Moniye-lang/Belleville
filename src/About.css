@@ -1,0 +1,367 @@
+ About-section
+.about-content {
+  width: 100%;
+  margin: 0 auto;
+}
+.section-header{
+    text-align: center;
+}
+
+.story-section {
+  background: white;
+  padding: 40px;
+  margin: 3rem 3rem;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.story-section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #333;
+  position: relative;
+}
+
+
+
+.story-section p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.mission,
+.vision {
+  background: white;
+  padding: 30px;
+  margin: 3rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.mission h3,
+.vision h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.mission p,
+.vision p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.team-section {
+  background: white;
+  padding: 40px;
+  margin: 3rem 3rem;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.team-member {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  background: #f8f9fa;
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.team-member h4 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.team-member p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.certifications {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 3rem 3rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.certifications h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.cert-item {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.cert-item:hover {
+  border-color: #667eea;
+  transform: translateY(-3px);
+}
+
+.cert-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cert-item p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.contact-card {
+  background-color: #f9fafa;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 3rem 3rem;
+  margin-bottom: 40px;
+  font-family: Arial, sans-serif;
+}
+.contact-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid transparent; 
+  gap: 25px;
+  border-radius: 15px;
+  background: #fff; 
+  transition: border-color 0.3s ease;
+  padding: 10px 15px;
+}
+
+.contact-item:hover {
+  border-color: #667eea;
+  background: #fff; 
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #222;
+}
+
+.info {
+  color: #222;
+} 
+
+@media (max-width: 768px) {
+  .about-content,
+  .contact-card,
+  .story-section,
+  .team-section,
+  .certifications {
+    max-width: 100vw;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .team-grid,
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 8px 4px;
+  }
+}
+.back-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: rgba(25, 25, 112, 0.9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: rgba(0, 255, 255, 0.8);
+}
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .team-grid,
+  .cert-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+  .mission-vision {
+    grid-template-columns: 1fr;
+  }
+  .mission,
+  .vision {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .contact-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 8px 4px;
+  }
+  .story-section {
+    margin: 0 auto;
+    width: 92%;
+    margin-bottom: 30px;
+  }
+  .story-section, h2{
+    text-align: center;
+  }
+
+  .team-section {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .certifications {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .about-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .team-grid,
+  .cert-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+  .mission-vision {
+    grid-template-columns: 1fr;
+  }
+  .mission,
+  .vision {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .contact-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 8px 4px;
+  }
+  .story-section {
+    margin: 0 auto;
+    width: 92%;
+    margin-bottom: 30px;
+  }
+  .story-section, h2{
+    text-align: center;
+  }
+
+  .team-section {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .certifications {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .about-content {
+    width: 90%;
+    margin: 0 auto;
+  } 
+} 
+
+@media (max-width: 320px) {
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+  .team-member h4 {
+    font-size: 1.1rem;
+  }
+  .team-member p {
+    font-size: 0.9rem;
+  }
+  .cert-item h4 {
+    font-size: 1rem;
+  }
+  .cert-item p {
+    font-size: 0.8rem;
+  }
+}
