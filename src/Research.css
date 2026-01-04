@@ -1,194 +1,236 @@
+/* ========================= */
+/* ===== HEADER ============ */
+/* ========================= */
+
 .research-header {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
-.research-header, h1{
+
+.research-header h1 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
   color: #333;
 }
 
 .research-header p {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
   color: #666;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0.5rem auto 0;
 }
 
-.research-filters{
+/* ========================= */
+/* ===== FILTERS =========== */
+/* ========================= */
+
+.research-filters {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 15px;
+  gap: 12px;
+  margin-bottom: 1.5rem;
   flex-wrap: wrap;
 }
+
 .research-filters button {
-  padding: 10px 15px;
-  border-radius: 40px;
+  padding: 9px 16px;
+  border-radius: 999px;
   border: 2px solid #6c63ff;
-  background-color: #fff;
-  transition: background-color 0.3s ease; 
+  background: #fff;
   color: #6c63ff;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.research-filters button:hover {
-  background-color: #6c63ff;
-  color: #fff;
-}
-.research-filters button.active {
-  background-color: #6c63ff;
-  color: #fff;
-}
- .research-content{
-  display: grid;
-  gap: 30px;
-  padding: 30px 5rem 0 5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
 }
 
+.research-filters button:hover,
+.research-filters button.active {
+  background: #6c63ff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Mobile: horizontal scroll filters */
+@media (max-width: 768px) {
+  .research-filters {
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 8px;
+  }
+  .research-filters button {
+    flex: 0 0 auto;
+  }
+}
+
+/* ========================= */
+/* ===== CONTENT GRID ====== */
+/* ========================= */
+
+.research-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .research-content {
+    padding: 2rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .research-content {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 4rem;
+    gap: 2rem;
+  }
+}
+
+/* 4K */
+@media (min-width: 1920px) {
+  .research-content {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+}
+
+/* ========================= */
+/* ===== CARDS ============= */
+/* ========================= */
+
 .paper-card,
-.study-card {
+.study-card,
+.video-card {
   background: #fff;
   color: #333;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   display: flex;
-  gap: 20px;
+  gap: 1rem;
   align-items: flex-start;
-  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
+
 .paper-card:hover,
-.study-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+.study-card:hover,
+.video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.15);
 }
+
+/* ========================= */
+/* ===== ICONS ============= */
+/* ========================= */
+
 .paper-icon,
 .study-icon {
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   color: #667eea;
   flex-shrink: 0;
 }
+
+/* ========================= */
+/* ===== CONTENT =========== */
+/* ========================= */
+
 .paper-content,
-.study-content {
+.study-content,
+.video-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
-.paper-content button{
-  padding: 10px 15px;
-  border-radius: 40px;
-  border: 2px solid #6c63ff;
-  background-color: #fff;
-  transition: background-color 0.3s ease; 
-  color: #6c63ff;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.paper-content button:hover,
-.study-content button:hover {
-  background-color: #6c63ff;
-  color: #fff;
-}
+
 .paper-content h3,
-.study-content h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+.study-content h3,
+.video-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
   color: #333;
 }
+
 .authors,
 .date {
+  font-size: 0.85rem;
   color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
 }
+
 .abstract,
-.findings {
-  color: #555;
-  margin: 15px 0;
-  line-height: 1.6;
-}
-.study-details {
-  margin: 15px 0;
-}
-.study-details p {
-  margin-bottom: 8px;
-  color: #555;
-}
-.video-content {
-  padding: 20px;
-}
-.video-content h3 {
-  font-size: 1.4rem;
-  color: #333;
-}
-.video-content p {
-  color: #555;
-  line-height: 1.6;
-}
-.presenter{
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  color: #667eea;
-}
+.findings,
 .description {
   color: #555;
   line-height: 1.6;
+  margin: 0.8rem 0;
 }
-.video-card{
+
+.study-details {
+  margin: 0.8rem 0;
+}
+
+.study-details p {
+  margin-bottom: 0.4rem;
+  color: #555;
+}
+
+/* ========================= */
+/* ===== CARD BUTTONS ====== */
+/* ========================= */
+
+.paper-content button,
+.study-content button {
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 2px solid #6c63ff;
   background: #fff;
-  color: #333;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  color: #6c63ff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.paper-content button:hover,
+.study-content button:hover {
+  background: #6c63ff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Card footer buttons */
+.card-footer {
+  margin-top: auto;
   display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+/* ========================= */
+/* ===== VIDEO CARD ======== */
+/* ========================= */
+
+.video-card {
   flex-direction: column;
-  gap: 15px;
-  transition: all 0.3s ease;
-}
-.video-card:hover {
-  transform: translateY(-3px);
 }
 
-@media (max-width: 768px) and (min-width: 425px) {
-  .research-content {
-    padding: 30px 1rem 0 1rem;
-    gap: 20px;
-    grid-template-columns: 1fr;
-  }
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  border: none;
+}
 
+/* ========================= */
+/* ===== MOBILE POLISH ===== */
+/* ========================= */
+
+@media (max-width: 480px) {
   .paper-card,
-  .study-card,
-  .video-card {
+  .study-card {
     flex-direction: column;
-    padding: 18px;
-    gap: 12px;
-  }
-
-  .paper-icon,
-  .study-icon {
-    font-size: 2.2rem;
-  }
-
-  .video-card iframe {
-    width: 100%;
-    height: 220px;
-    max-width: 100%;
-  }
-
-  .video-content {
-    padding: 10px 0 0 0;
-  }
-}
-@media (max-width: 375px) and (min-width: 320px) {
-  .research-content {
-    padding: 30px 1rem 0 1rem;
-    gap: 15px;
-    grid-template-columns: 1fr;
-  }
-
-  .paper-card,
-  .study-card,
-  .video-card {
-    flex-direction: column;
-    padding: 15px;
-    gap: 10px;
   }
 
   .paper-icon,
@@ -196,13 +238,12 @@
     font-size: 2rem;
   }
 
-  .video-card iframe {
-    width: 100%;
-    height: 200px;
-    max-width: 100%;
+  .research-filters {
+    gap: 6px;
   }
 
-  .video-content {
-    padding: 10px 0 0 0;
+  .research-filters button {
+    padding: 8px 14px;
+    font-size: 0.85rem;
   }
 }

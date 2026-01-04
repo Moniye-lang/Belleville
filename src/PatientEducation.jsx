@@ -51,6 +51,9 @@ const PatientEducation = ({ selectedCategory }) => {
             setActiveCategory(selectedCategory);
         }
     }, [selectedCategory]);
+    useEffect(() => {
+    window.scrollTo({ top: 1000, behavior: "smooth" });
+  }, []);
 
     return (
         <div className='patient-education' id='patient-education'>

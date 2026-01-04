@@ -1,111 +1,213 @@
-.mainprod h1{
+/* Main Product Heading */
+.mainprod h1 {
     font-size: 3rem;
     display: flex;
-    place-content: center;
+    justify-content: center;
     margin-bottom: 1.5rem;
 }
-img{
+
+/* Images */
+img {
     height: 200px;
     width: 200px;
     border-radius: 10px;
 }
-.pro{
-     display: grid;
+
+/* Product Grid */
+.pro {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
     padding: 20px;
     justify-content: center;
 }
+
+/* Product Card */
 .product-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .product-card img {
-  width: 100%;
-  height: auto; 
-  max-height: 180px; 
-  object-fit: contain; 
-  border-radius: 15px;
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: contain;
+    border-radius: 15px;
 }
 
-.but3{
+/* Buttons */
+.but3 {
     height: 60px;
     width: 150px;
     font-size: 21px;
     border: none;
-    transition: all 0.5s;
+    transition: all 0.3s ease;
     cursor: pointer;
     border-radius: 20px;
     background-color: rgba(25, 25, 112, 0.9);
     color: #fff;
 }
-button:hover{
-    background: rgba(25, 25, 112,80%);
-    color: #fff;
+
+.but3:hover {
+    background-color: rgba(25, 25, 112, 0.8);
 }
-.text{
+
+/* Product Text */
+.text {
     text-align: center;
-    /* font-size: 25px; */
     color: #333;
     padding: 10px;
     margin-top: 15px;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #333;
 }
+
+/* Sub Buttons */
 .fstsub {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .fstsub button {
-  height: 100px;
-  width: 140px;
-  border-radius: 20px;
-  font-size: 18px;
-  text-align: center;
-  background: rgba(25, 25, 112, 90%);
-  color: #fff;
-  border: none;
-  transition: background 0.3s;
+    height: 100px;
+    width: 140px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(25, 25, 112, 0.9);
+    color: #fff;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.nsi{
+.fstsub button:hover {
+    background: rgba(25, 25, 112, 0.8);
+    transform: scale(1.05);
+}
+
+/* Card Info Section */
+.nsi {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15px;
-    flex-direction: column;
     gap: 10px;
+    margin-top: 15px;
 }
 
 .rating {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
+/* Clear Button */
 .clear {
-  height: 30px;
-  border-radius: 10px;
-  border: none;
-  width: 130px;
-  background-color: #eee;
-  cursor: pointer;
-  transition: all 0.3s;
+    height: 30px;
+    width: 130px;
+    border-radius: 10px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .clear:hover {
-  background-color: #ccc;
+    background-color: #ccc;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .mainprod h1 {
+        font-size: 2.5rem;
+    }
+
+    .pro {
+        gap: 30px;
+    }
+
+    .product-card {
+        padding: 18px;
+    }
+
+    .fstsub button {
+        width: 120px;
+        height: 90px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .mainprod h1 {
+        font-size: 2rem;
+    }
+
+    .pro {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .product-card img {
+        max-height: 150px;
+    }
+
+    .but3 {
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .fstsub button {
+        width: 100px;
+        height: 80px;
+        font-size: 14px;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 425px) {
+    .mainprod h1 {
+        font-size: 1.75rem;
+    }
+
+    .product-card img {
+        max-height: 120px;
+    }
+
+    .but3 {
+        width: 100px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .fstsub button {
+        width: 90px;
+        height: 70px;
+        font-size: 13px;
+    }
+
+    .text {
+        font-size: 0.95rem;
+    }
 }

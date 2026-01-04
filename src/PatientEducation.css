@@ -1,141 +1,179 @@
+/* ============================= */
+/* ===== PATIENT EDUCATION ===== */
+/* ============================= */
+
 .patient-education {
-  padding: 2rem;
+  padding: 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* ===== HEADER ===== */
 .education-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
 .education-header h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 700;
   color: #1f2937;
   margin-bottom: 1rem;
 }
 
 .education-header p {
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
   color: #6b7280;
   max-width: 600px;
   margin: 0 auto;
 }
 
+/* ===== CATEGORIES ===== */
 .education-categories {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .category-btn {
   padding: 0.75rem 1.5rem;
-  border: 2px solid #e5e7eb;
-  background-color: white;
-  color: #374151;
   border-radius: 40px;
   border: 2px solid #6c63ff;
+  background-color: #fff;
   color: #6c63ff;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.category-btn:hover {
+.category-btn:hover,
+.category-btn.active {
   background-color: #6c63ff;
   color: #fff;
 }
 
-.category-btn.active {
-  background-color: #6c63ff;
-  color: white;
-}
-
+/* ===== CONTENT ===== */
 .education-content {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .education-content h2 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
   color: #1f2937;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
+/* ===== EDUCATION ITEMS ===== */
 .education-item {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 0.75rem;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .education-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
 }
 
 .education-item h2 {
-  font-size: 1.25rem;
+  font-size: clamp(1.125rem, 3vw, 1.25rem);
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 0.75rem;
 }
 
 .education-item p {
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
+/* ============================= */
+/* ===== MOBILE (≤ 768px) ====== */
+/* ============================= */
 @media (max-width: 768px) {
-  .patient-education-section {
-    padding: 1rem;
+  .patient-education {
+    padding: 1.5rem;
   }
-  
+
   .education-categories {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .category-btn {
     width: 100%;
     max-width: 300px;
   }
-  
-  .section-header h1 {
-    font-size: 2rem;
-  }
-  
+
   .education-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
-@media (max-width: 425px) and (min-width: 320px) {
+/* ============================= */
+/* ===== SMALL MOBILE (≤ 425px) ====== */
+/* ============================= */
+@media (max-width: 425px) {
   .education-header h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
-  
+
   .education-header p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
-  
+
   .category-btn {
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
   }
-  
+
   .education-item h2 {
     font-size: 1.125rem;
   }
-  
+
   .education-item p {
     font-size: 0.875rem;
+  }
+}
+
+/* ============================= */
+/* ===== LARGE SCREENS (≥ 1440px) ====== */
+/* ============================= */
+@media (min-width: 1440px) {
+  .patient-education {
+    padding: 3rem 2rem;
+  }
+
+  .education-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* ============================= */
+/* ===== EXTRA LARGE SCREENS (≥ 1920px) ====== */
+/* ============================= */
+@media (min-width: 1920px) {
+  .patient-education {
+    max-width: 1800px;
+    padding: 4rem 2rem;
+  }
+
+  .education-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
   }
 }
