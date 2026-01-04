@@ -1,10 +1,15 @@
 // Hero.jsx
 import { React } from "react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import './hero.css';
 
 export default function Hero() {
     const navigate = useNavigate();
+    
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
 
     // Navigate to Contact page
     const goToContact = () => {
